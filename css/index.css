@@ -1,0 +1,352 @@
+/*头部导航部分start*/
+.it12345_nav {
+    background-color: #fff;
+    border-top: none;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 0;
+    z-index: 9999;
+    width: 100%;
+    border-radius: 0;
+    top: 0;
+}
+
+/*.it12345_nav .wjs_icon_logo{
+    font-size: 50px;
+    color: #e92322;
+    line-height: 50px;
+    vertical-align: middle;
+}
+.it12345_nav .wjs_icon_word{
+    font-size: 36px;
+    color: #333;
+    line-height: 50px;
+    vertical-align: middle;
+}*/
+.it12345_nav .it12345_logo {
+
+}
+
+.it12345_nav .navbar-brand {
+    color: #777;
+    height: 80px;
+    line-height: 50px;
+}
+
+.it12345_nav .navbar-brand:hover,
+.it12345_nav .navbar-brand:focus {
+    color: #5e5e5e;
+    background-color: transparent;
+}
+
+.it12345_nav .navbar-text {
+    color: #777;
+}
+
+.it12345_nav .navbar-nav > li > a {
+    color: #777;
+    height: 80px;
+    line-height: 50px;
+    padding: 10px 25px;
+    padding-top: 20px;
+}
+
+.it12345_nav .navbar-nav > li > a:hover,
+.it12345_nav .navbar-nav > li > a:focus {
+    color: #333;
+    background-color: #fff;
+    border-bottom: 3px solid #FF5500;
+}
+
+.it12345_nav .navbar-nav > .active > a,
+.it12345_nav .navbar-nav > .active > a:hover,
+.it12345_nav .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #fff;
+    border-bottom: 3px solid #FF5500;
+}
+
+.it12345_nav .navbar-nav > .disabled > a,
+.it12345_nav .navbar-nav > .disabled > a:hover,
+.it12345_nav .navbar-nav > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+}
+
+.it12345_nav .navbar-toggle {
+    border-color: #ddd;
+    margin-top: 23px;
+    margin-bottom: 23px;
+}
+
+.it12345_nav .navbar-toggle:hover,
+.it12345_nav .navbar-toggle:focus {
+    background-color: #ddd;
+}
+
+.it12345_nav .navbar-toggle .icon-bar {
+    background-color: #888;
+}
+
+.it12345_nav .navbar-collapse,
+.it12345_nav .navbar-form {
+    border-color: #e7e7e7;
+}
+
+.it12345_nav .navbar-nav > .open > a,
+.it12345_nav .navbar-nav > .open > a:hover,
+.it12345_nav .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+}
+
+@media (max-width: 767px) {
+    .it12345_nav .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+
+    .it12345_nav .navbar-nav .open .dropdown-menu > li > a:hover,
+    .it12345_nav .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #333;
+        background-color: transparent;
+    }
+
+    .it12345_nav .navbar-nav .open .dropdown-menu > .active > a,
+    .it12345_nav .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .it12345_nav .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #555;
+        background-color: #e7e7e7;
+    }
+
+    .it12345_nav .navbar-nav .open .dropdown-menu > .disabled > a,
+    .it12345_nav .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+    .it12345_nav .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+        color: #ccc;
+        background-color: transparent;
+    }
+}
+
+.it12345_nav .navbar-link {
+    color: #777;
+}
+
+.it12345_nav .navbar-link:hover {
+    color: #333;
+}
+
+.it12345_nav .btn-link {
+    color: #777;
+}
+
+.it12345_nav .btn-link:hover,
+.it12345_nav .btn-link:focus {
+    color: #333;
+}
+
+.it12345_nav .btn-link[disabled]:hover,
+fieldset[disabled] .it12345_nav .btn-link:hover,
+.it12345_nav .btn-link[disabled]:focus,
+fieldset[disabled] .it12345_nav .btn-link:focus {
+    color: #ccc;
+}
+
+/*头部导航end*/
+
+/*广告和搜索区域*/
+.it12345_ad_search {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.it12345_ad_search .search {
+    float: left;
+    width: 80%;
+    margin-left: 10%;
+
+
+}
+
+.it12345_ad_search .search #search_list {
+    margin-top: 30px;
+    margin-left: 10%;
+    height: 30%;
+}
+
+.it12345_ad_search .search #search_list > li {
+    text-align: center;
+    min-width: 40px;
+    line-height: 50px;
+    float: left;
+    width: 10%;
+    height: 50px;
+    cursor: pointer;
+}
+
+.it12345_ad_search .search #search_list > li.active {
+    color: #0AA770;
+}
+
+.it12345_ad_search .search #search_list .github {
+    width: 15%;
+}
+
+.it12345_ad_search .search_input input {
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #777;
+}
+
+.it12345_ad_search .search_input #search_btn {
+    width: 15%;
+    min-width: 50px;
+}
+
+.it12345_ad_search #search_content {
+    margin-left: 10%;
+    width: 65%;
+}
+
+/*页面主体部分*/
+.it12345_main .container-fluid {
+    padding-left: 120px;
+    width: 100%;
+
+}
+
+/*页面主体部分右边的内容*/
+.it12345_main .tab-content {
+    border: 1px solid #0AA770;
+    height: 300px;
+}
+
+.it12345_main .tab-content > div > div {
+    /*border: 1px solid #4c4c4c;*/
+    height: 40px;
+    padding: 3px 5px;
+}
+
+.it12345_main .tab-content > div > div img {
+    width: 16px;
+    height: 16px;
+
+}
+
+.it12345_main .tab-content > div > div a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 34px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.it12345_main .tab-content > div > div a:hover {
+    background-color: #fbf7f3;
+}
+
+.it12345_main .tab-content > div > div a:hover span {
+    color: #FF5500;
+}
+
+/*页签页面*/
+.it12345_main .nav-tabs {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.it12345_main .nav-tabs-parent{
+    overflow: hidden;
+}
+.it12345_main .nav-tabs > li {
+    float: left;
+    margin-bottom: -1px;
+}
+
+.it12345_main .nav-tabs > li > a {
+    margin-right: 12px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+}
+
+.it12345_main .nav-tabs > li > a:hover {
+    border-color: #eee #eee #ddd;
+}
+
+.it12345_main .nav-tabs > li.active > a,
+.it12345_main .nav-tabs > li.active > a:hover,
+.it12345_main .nav-tabs > li.active > a:focus {
+    color: #fff;
+    cursor: default;
+    background-color: #0AA770;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+}
+
+.it12345_main .nav-tabs .nav-justified {
+    width: 100%;
+    border-bottom: 0;
+}
+
+.it12345_main .nav-tabs .nav-justified > li {
+    float: none;
+}
+
+.it12345_main .nav-tabs .nav-justified > li > a {
+
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.it12345_main .nav-tabs .nav-justified > .dropdown .dropdown-menu {
+    top: auto;
+    left: auto;
+}
+
+@media (min-width: 768px) {
+    .it12345_main .nav-tabs.nav-justified > li {
+        display: table-cell;
+        width: 1%;
+    }
+
+    .it12345_main .nav-tabs.nav-justified > li > a {
+        margin-bottom: 0;
+    }
+}
+
+.it12345_main .nav-tabs.nav-justified > li > a {
+    margin-right: 0;
+    border-radius: 4px;
+}
+
+.it12345_main .nav-tabs.nav-justified > .active > a,
+.it12345_main .nav-tabs.nav-justified > .active > a:hover,
+.it12345_main .nav-tabs.nav-justified > .active > a:focus {
+    border: 1px solid #ddd;
+}
+
+@media (min-width: 768px) {
+    .it12345_main .nav-tabs.nav-justified > li > a {
+        border-bottom: 1px solid #ddd;
+        border-radius: 4px 4px 0 0;
+    }
+
+    .it12345_main .nav-tabs.nav-justified > .active > a,
+    .it12345_main .nav-tabs.nav-justified > .active > a:hover,
+    .it12345_main .nav-tabs.nav-justified > .active > a:focus {
+        border-bottom-color: #fff;
+    }
+}
+
+/*底部部分*/
+.footer {
+    margin-top: 30px;
+    width: 100%;
+    height: 150px;
+    border-top: 2px solid #0AA770;
+}
+
+.footer div {
+    text-align: center;
+    padding: 15px 0;
+}

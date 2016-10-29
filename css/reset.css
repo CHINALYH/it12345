@@ -1,0 +1,37 @@
+@CHARSET "UTF-8";
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,input{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color:#333;
+}
+/*主体色*/
+body{
+    font-family: Microsoft YaHei,sans-serif;
+    color:#333;
+    font-size:14px;
+    min-width: 320px;
+}
+a:hover{
+    color: #FF5500;
+    text-decoration: none;
+}
+
+ol, ul {list-style: none;}
+
+blockquote, q {quotes: none;}/* 去掉引用里的引号 */
+
+:focus {outline: 0;}
+
+table {border-collapse: collapse;border-spacing: 0;}
+table caption{display:none;}  /*表格的标题隐藏*/
+
+/*定位*/
+.fl{float:left;}
+.fr{float:right;}
+
+
+
+
