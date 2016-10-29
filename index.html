@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>it12345导航网</title>
+    <link rel="shortcut icon" href="./favicon.ico">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="keywords" content="it12345导航,程序员导航,程序猿导航,前端技术,Android导航,IOS导航,IOS程序员导航,IT导航,Html5网址导航,互联网面试">
+    <meta name="description" content="it12345导航,专业面向程序员的导航网址">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!--[if lt ie 9]>
+    <script src="lib/html5shiv/html5shiv.js"></script>
+    <script src="lib/respond/respond.js"></script>
+    <![end if]-->
+</head>
+<body>
+<nav class="navbar it12345_nav" role="navigation" data-spy="affix" data-offset-top="200">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <h1><img src="images/it12345_logo.png" alt=""></h1>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">前端</a></li>
+                <li><a href="#">Android</a></li>
+                <li><a href="#">IOS</a></li>
+                <li><a href="#">平面设计</a></li>
+                <li><a href="#">面试招聘</a></li>
+                <li><a href="#">建议提交</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--广告和搜索区域-->
+<div class="it12345_ad_search">
+    <div class="container-fluid">
+        <div class="search ">
+            <ul id="search_list">
+                <li url="https://www.baidu.com/s?wd=" class="active">百度</li>
+                <li url="https://www.google.com/search?q=">谷歌</li>
+                <li url="http://cn.bing.com/search?q=" >必应</li>
+                <li url="http://fanyi.baidu.com/?aldtype=16047#en/zh/">翻译</li>
+                <li class="github" url="https://github.com/search?utf8=✓&q=" >Github</li>
+                <li url="http://image.baidu.com/search/index?tn=baiduimage&word=">图片</li>
+            </ul>
+            <div class="search_input ">
+                <a id="linkTo" target="_blank" style="display: none;"><span>it12345导航</span></a>
+                <input type="text" id="search_content" placeholder="请输入搜索内容"/>
+                <input id="search_btn" type="button" url="https://www.baidu.com/s?wd=" value="百度"/>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--页面主体部分-->
+<div class="it12345_main">
+    <!--web前端-->
+    <div class="container">
+        <div class="nav-tabs-parent">
+            <ul class="nav nav-tabs" role="tablist">
+                <!--IOS,web前端导航部分-->
+         <!--<li role="presentation" class="active"><a href="#web_commonUse" role="tab" data-toggle="tab">Web前端</a></li>
+               -->
+            </ul>
+        </div>
+        <div class="tab-content" id="web_content">
+            <!--web前端部分数据动态渲染-->
+        </div>
+    </div>
+    <!--Android部分-->
+    <div class="container">
+        <div class="nav-tabs-parent">
+            <ul class="nav nav-tabs" role="tablist">
+                <!--IOS,Android导航部分-->
+            </ul>
+        </div>
+        <div class="tab-content">
+            <!--Android数据渲染区域-->
+        </div>
+    </div>
+    <!--IOS部分-->
+    <div class="container">
+        <div class="nav-tabs-parent">
+            <ul class="nav nav-tabs" role="tablist">
+                <!--IOS,nav-tabs导航部分-->
+            </ul>
+        </div>
+        <div class="tab-content">
+            <!--ios数据渲染区域-->
+        </div>
+    </div>
+</div>
+<!--底部部分-->
+<footer class="footer">
+    <div>&copy;2016<span>&nbsp;|&nbsp;www.it12345.cn程序员导航</span></div>
+    <div><span>与我联系:XXXXXXXX&nbsp;|&nbsp;邮箱:1264599115@qq.com</span></div>
+</footer>
+
+<!--准备nav-tabs部分的渲染模板-->
+<script type="text/template" id="navTab_template">
+    <% for(var i =0 ; i < model.length ; i++){%>
+    <li role="presentation" class="<%=i==0?'active':''?>"><a href="<%=model[i].href%>" role="tab" data-toggle="tab"><%=model[i].name%></a>
+    </li><%};%>
+</script>
+<!--准备tab-content渲染模板start-->
+<script type="text/template" id="web_template">
+    <% for(var i =0 ; i < model.length ; i++){%>
+    <div role="tabpanel" class="tab-pane <%=i==0?'active':''%>" id="<%=model[i].id%>">
+        <% for(var j =0 ; j < model[i].data.length ; j++){%>
+        <div class="col-xs-6 col-sm-4 col-md-2">
+            <a href="<%=model[i].data[j].webUrl.href%>"><span><img src="<%=model[i].data[j].webUrl.src%>" alt=""></span><span><%=model[i].data[j].webUrl.name%></span></a>
+        </div>
+        <%};%>
+    </div>
+    <%};%>
+</script>
+<!--准备渲染模板end-->
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/swipe.js"></script><!--移动端滑动事件方法-->
+<script src="lib/template/template-native.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        /*ajax异步跨域请求获取天气*/
+        function getweather(){
+
+        }
+    });
+</script>
+
+</body>
+</html>
