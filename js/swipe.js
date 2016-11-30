@@ -1,6 +1,7 @@
 
 if(!window.it12345){
     window.it12345 = {};
+    window.it12345 = {};
 }
 it12345.iScroll = function(args){
     /*调用的时候没有初始化的话就是初始化一次*/
